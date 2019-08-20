@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, FlatList, Image, Text, StatusBar, Dimensions } from 'react-native'
+import { View, FlatList, Image, Text, StatusBar, Dimensions ,ScrollView} from 'react-native'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
 import NavigationService from './navigation/NavigationService'
@@ -36,7 +36,7 @@ export default class AllProducts extends Component {
       }*/
     render() {
         return (
-            <View style={{ flex: 1 ,backgroundColor:'ghostwhite' }}>
+            <ScrollView style={{ flex: 1 ,backgroundColor:'ghostwhite' }}>
                 <StatusBar backgroundColor='blue' />
                 <View style={{ height: deviceHeight / 3, backgroundColor: 'blue', justifyContent: 'center', alignItems: 'center' }}>
                     <Text style={{ color: 'white', fontSize: 26, marginBottom: 8 }}>Integral mall</Text>
@@ -126,6 +126,66 @@ export default class AllProducts extends Component {
                             image: require('./Images/flash.png'),
                             name: 'Flash',
                             id: 70
+                        },
+                        {
+                            image: require('./Images/mouse.png'),
+                            name: 'Mouse',
+                            id: 12
+                        },
+                        {
+                            image: require('./Images/charger.png'),
+                            name: 'Charger',
+                            id: 8
+                        },
+                        {
+                            image: require('./Images/laptop.png'),
+                            name: 'Laptop',
+                            id: 95
+                        },
+                        {
+                            image: require('./Images/headphones.png'),
+                            name: 'HeadPhones',
+                            id: 15
+                        },
+                        {
+                            image: require('./Images/mobile.png'),
+                            name: 'Mobile',
+                            id: 84
+                        },
+                        {
+                            image: require('./Images/flash.png'),
+                            name: 'Flash',
+                            id: 70
+                        },
+                        {
+                            image: require('./Images/mouse.png'),
+                            name: 'Mouse',
+                            id: 12
+                        },
+                        {
+                            image: require('./Images/charger.png'),
+                            name: 'Charger',
+                            id: 8
+                        },
+                        {
+                            image: require('./Images/laptop.png'),
+                            name: 'Laptop',
+                            id: 95
+                        },
+                        {
+                            image: require('./Images/headphones.png'),
+                            name: 'HeadPhones',
+                            id: 15
+                        },
+                        {
+                            image: require('./Images/mobile.png'),
+                            name: 'Mobile',
+                            id: 84
+                        },
+                        {
+                            image: require('./Images/flash.png'),
+                            name: 'Flash',
+                            id: 70
                         }
                     ]}
                     renderItem={({ item }) => {
@@ -156,7 +216,7 @@ export default class AllProducts extends Component {
                     }}
                     numColumns={2}
                 />
-            </View>
+            </ScrollView>
         )
     }
 
